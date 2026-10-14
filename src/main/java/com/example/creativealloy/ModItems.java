@@ -18,5 +18,9 @@ public final class ModItems {
 				}
 			});
 
+	/** Креативная схема управления: следующая ступень после Совершенной схемы Mekanism. */
+	public static final DeferredItem<Item> CREATIVE_CONTROL_CIRCUIT = ITEMS.register("creative_control_circuit",
+			() -> new Item(new Item.Properties().rarity(Rarity.EPIC)));
+
 	private ModItems() {}
 }
