@@ -1,0 +1,19 @@
+{
+  "type": "mekanism:combining",
+  "main_input": {
+    "ingredient": {
+      "item": "mekanism:alloy_atomic"
+    },
+    "amount": 1
+  },
+  "extra_input": {
+    "ingredient": {
+      "item": "minecraft:nether_star"
+    },
+    "amount": 1
+  },
+  "output": {
+    "item": "creativealloy:creative_alloy",
+    "count": 1
+  }
+}
