@@ -1,0 +1,36 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "FXF",
+    "ATA",
+    "FEF"
+  ],
+  "key": {
+    "F": {
+      "item": "createbigcannons:nethersteel_ingot"
+    },
+    "X": {
+      "item": "creativealloy:creative_control_circuit"
+    },
+    "A": {
+      "item": "creativealloy:creative_alloy"
+    },
+    "T": {
+      "item": "createbigcannons:autocannon_ammo_container"
+    },
+    "E": {
+      "item": "minecraft:gunpowder"
+    }
+  },
+  "result": {
+    "id": "createbigcannons:creative_autocannon_ammo_container",
+    "count": 1
+  },
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "createbigcannons"
+    }
+  ]
+}

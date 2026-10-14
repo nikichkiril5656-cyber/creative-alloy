@@ -1,0 +1,33 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "FXF",
+    "ATA",
+    "FFF"
+  ],
+  "key": {
+    "F": {
+      "item": "refinedstorage:improved_processor"
+    },
+    "X": {
+      "item": "creativealloy:creative_control_circuit"
+    },
+    "A": {
+      "item": "creativealloy:creative_alloy"
+    },
+    "T": {
+      "item": "refinedstorage:range_upgrade"
+    }
+  },
+  "result": {
+    "id": "refinedstorage:creative_range_upgrade",
+    "count": 1
+  },
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "refinedstorage"
+    }
+  ]
+}

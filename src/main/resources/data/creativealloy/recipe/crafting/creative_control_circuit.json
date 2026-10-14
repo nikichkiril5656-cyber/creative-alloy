@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "AUA"
+  ],
+  "key": {
+    "A": {
+      "item": "creativealloy:creative_alloy"
+    },
+    "U": {
+      "item": "mekanism:ultimate_control_circuit"
+    }
+  },
+  "result": {
+    "id": "creativealloy:creative_control_circuit",
+    "count": 1
+  }
+}
