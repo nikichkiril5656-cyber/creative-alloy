@@ -1,0 +1,39 @@
+plugins {
+	id 'java'
+	id 'net.neoforged.moddev' version '2.0.78'
+}
+
+version = '1.0.0'
+group = 'com.example.creativealloy'
+
+base { archivesName = 'creative-alloy' }
+
+java.toolchain.languageVersion = JavaLanguageVersion.of(21)
+
+repositories {
+	maven { url = 'https://modmaven.dev/' }
+}
+
+neoForge {
+	version = '21.1.172'
+
+	runs {
+		client { client() }
+		server {
+			server()
+			programArguments.add('--nogui')
+		}
+	}
+
+	mods {
+		creativealloy { sourceSet sourceSets.main }
+	}
+}
+
+dependencies {
+	// Mekanism нужен только во время запуска (runClient / runServer): код мода его не использует,
+	// рецепт Объединителя описан обычным JSON.
+	runtimeOnly "mekanism:Mekanism:${mekanism_version}"
+}
+
+tasks.withType(JavaCompile).configureEach { options.encoding = 'UTF-8' }
