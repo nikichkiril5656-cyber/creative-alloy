@@ -14,10 +14,11 @@ public class CreativeAlloyMod {
 		modBus.addListener(CreativeAlloyMod::addToCreativeTab);
 	}
 
-	/** Кладём сплав во вкладку «Ингредиенты». */
+	/** Кладём предметы мода во вкладку «Ингредиенты». */
 	private static void addToCreativeTab(BuildCreativeModeTabContentsEvent event) {
 		if (event.getTabKey() == CreativeModeTabs.INGREDIENTS) {
 			event.accept(ModItems.CREATIVE_ALLOY);
+			event.accept(ModItems.CREATIVE_CONTROL_CIRCUIT);
 		}
 	}
 }
